@@ -6,4 +6,4 @@ RUN go get github.com/gin-gonic/gin && \
     go get github.com/go-sql-driver/mysql && \
     go get github.com/jinzhu/gorm
 
-CMD go run main.go
+CMD cd app && go run main.go
