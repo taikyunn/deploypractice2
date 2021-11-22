@@ -17,7 +17,7 @@ COPY . .
 
 FROM alpine:3.12
 
-COPY --from=builder /main .
+# COPY --from=builder /main .
 
 ENV PORT=${PORT}
 ENTRYPOINT ["/main web"]
