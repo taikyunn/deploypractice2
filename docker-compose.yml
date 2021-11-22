@@ -10,4 +10,5 @@ services:
       - .:/go/src
     working_dir: /go/src/app
     tty: true
-    command: /bin/bash -c "go run main.go"
+    # ここのコマンドはHeroku側が認識しない
+    # command: /bin/bash -c "go run main.go"
