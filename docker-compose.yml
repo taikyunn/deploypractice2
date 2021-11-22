@@ -2,7 +2,7 @@ version: '3'
 services:
   go:
     build:
-      context: ./docker/go
+      context: ./docker
     container_name: deploypractice2
     ports:
       - 3000:3000
