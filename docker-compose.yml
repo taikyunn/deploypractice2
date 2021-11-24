@@ -1,14 +1,14 @@
 version: '3'
 services:
   go:
-    build:
-      context: ./docker
+    image: 926330672208.dkr.ecr.ap-northeast-1.amazonaws.com/deploypractice2_go:latest
+    build: ./docker
     container_name: deploypractice2
     ports:
       - 3000:3000
+    # volimensの記述はFargateではエラーになる
     volumes:
       - .:/go/src
     working_dir: /go/src/app
     tty: true
-    # ここのコマンドはHeroku側が認識しない
-    # command: /bin/bash -c "go run main.go"
+    command: /bin/bash -c "go run main.go"

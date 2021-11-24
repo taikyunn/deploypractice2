@@ -1,1 +1,1 @@
-Docker+goで作成したHelloWorldをHerokuへデプロイ
+Docker+goで作成したHelloWorldをAWSへデプロイ
