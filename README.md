@@ -1,1 +1,4 @@
 Docker+goで作成したHelloWorldをAWSへデプロイ
+
+1.ec2インスタンスを生成してDocker環境を作成しデプロイ
+できた。

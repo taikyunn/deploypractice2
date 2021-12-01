@@ -8,7 +8,7 @@ services:
       - 3000:3000
     tty: true
     # volimensの記述はFargateではエラーになる
-    volumes:
-      - .:/go/src
-    working_dir: /go/src/app
-    command: /bin/bash -c "go run main.go"
+    # volumes:
+    #   - .:/go/src
+    # working_dir: /go/src/app
+    # command: /bin/bash -c "go run main.go"
